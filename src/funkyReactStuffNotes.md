@@ -1,0 +1,2 @@
+1. when using checkboxes in react, you have to make sure to set the value to something, probably false or else e.target.checked will be undefined.
+2. i have at least one had issues with global variables that were changed inside a switch, inside a function, not keeping their changes outside that function, even though they console loged the changes just fine inside the function after the switch. Idk, wierd scoping issue.
