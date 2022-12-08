@@ -45,6 +45,7 @@ import {
   Link,
 } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
+import { NavLinks } from './NavLinks/NavLinks';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -157,6 +158,9 @@ ReactDOM.render(
           <li>
             <Link to="/ReactModal">ReactModal</Link>
           </li>
+          <li>
+            <Link to="/NavLinks">NavLinks</Link>
+          </li>
         </ul>
         <Switch>
           <Route path="/AxiosCall">
@@ -262,6 +266,9 @@ ReactDOM.render(
           </Route>
           <Route path="/PassingPropsUp">
             <PassingPropsUp />
+          </Route>
+          <Route path="/NavLinks">
+            <NavLinks />
           </Route>
           <Route path="/">
             <Default />
